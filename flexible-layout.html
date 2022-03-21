@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 4-->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/salesforce-lightning-design-system.css" />
+  <link rel="stylesheet" href="./assets/styles/salesforce-lightning-design-system-legacy.css" />
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <title>Grid Layout</title>
+</head>
+<body>
+  <!-- dropdown header start here -->
+  <div class="slds-builder-header_container">
+    <div class="slds-builder-toolbar" role="toolbar">
+      <div class="slds-builder-toolbar__actions" aria-label="Document actions">
+        <button class="slds-button slds-button_neutral">Save As</button>
+        <button class="slds-button slds-button_neutral">Save</button>
+        <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-p-left_xx-small"
+        aria-controls="primary-search-combobox-id-1">
+        <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+            role="none">
+            <button type="button"
+                class="slds-input_faux slds-combobox__input slds-combobox__input-value"
+                aria-labelledby="combobox-label-id-14 objectswitcher-combobox-id-2-selected-value"
+                id="objectswitcher-combobox-id-2-selected-value"
+                aria-controls="objectswitcher-listbox-id-2"
+                aria-expanded="false" aria-haspopup="listbox">
+                <span class="slds-truncate"
+                    id="combobox-value-id-14">Status: <span class="step-active">Active</span></span>
+            </button>
+            <span
+                class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
+                <i class="fa fa-chevron-down"></i>
+            </span>
+        </div>
+        <div id="objectswitcher-listbox-id-2"
+            class="slds-dropdown slds-dropdown_length-7 slds-dropdown_x-small slds-dropdown_left left-auto slds-p-around_x-small slds-m-top_none"
+            role="listbox">
+            <div class="step step-complete">
+              <div>
+                <div class="circle"><i class="fa fa-check"></i></div>
+              </div>
+              <div>
+                <div class="title">Draft</div>
+              </div>
+            </div>
+            <div class="step step-complete">
+              <div>
+                <div class="circle"><i class="fa fa-check"></i></div>
+              </div>
+              <div>
+                <div class="title">Pending Approvel</div>
+              </div>
+            </div>
+            <div class="step step-complete">
+              <div>
+                <div class="circle"><i class="fa fa-check"></i></div>
+              </div>
+              <div>
+                <div class="title">Approved</div>
+              </div>
+            </div>
+                              
+            <div class="step step-active">
+              <div>
+                <div class="circle">4</div>
+              </div>
+              <div>
+                <div class="title">Active</div>
+              </div>
+            </div>  
+
+            <div class="step">
+              <div>
+                <div class="circle">5</div>
+              </div>
+              <div>
+                <div class="title">Rejected</div>
+              </div>
+            </div>
+
+            <div class="step">
+              <div>
+                <div class="circle">6</div>
+              </div>
+              <div>
+                <div class="title">Inactive</div>
+              </div>
+            </div>
+        </div>
+    </div>
+      </div>
+      <div class="slds-builder-toolbar__item-group" aria-label="Edit actions">
+        <div class="slds-button-group">
+          <button class="slds-button slds-button_icon slds-button_icon-border" title="Copy" tabindex="-1">
+            <i class="fa fa-copy"></i>
+            <span class="slds-assistive-text">Copy</span>
+          </button>
+          <button class="slds-button slds-button_icon slds-button_icon-border" title="Paste" tabindex="-1">
+            <i class="fa fa-paste"></i>
+            <span class="slds-assistive-text">Paste</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-center slds-p-around_medium">
+    <a href="two-column-layout.html" class="slds-button slds-button_neutral">Two Column layout</a>
+    <a href="index.html" class="slds-button slds-button_neutral">Three Column layout</a>
+    <a href="four-column-layout.html" class="slds-button slds-button_neutral">Four Column layout</a>
+    <a href="flexible-layout.html" class="slds-button slds-button_neutral">Flexible Layout</a>
+  </div>
+  <div class="container">
+    <header>
+      <h2 class="slds-text-heading_large">
+        Scenarios (4)
+      </h2>
+      <span>
+        X
+      </span>
+    </header>
+    <div class="flex-container">
+      <div class="flex-row-flexible">
+        <div class="element"></div>
+        <div class="element slds-p-around_x-small">
+          <h2 class="slds-page-header__title slds-border_bottom slds-p-top_x-small slds-p-bottom_x-small">Scenario 1</h2>
+          <div class="slds-p-top_x-small slds-p-bottom_xx-small">
+            <p class="slds-text-body_small color-gray">Created By</p>
+            <div class="flex-between">
+              <p class="slds-p-top_xx-small">Andrew Flintoff</p>
+              <p class="slds-badge">Internal</p>
+            </div>
+          </div>
+        </div>
+        <div class="element slds-p-around_x-small">
+          <h2 class="slds-page-header__title slds-border_bottom slds-p-top_x-small slds-p-bottom_x-small">Scenario 2</h2>
+          <div class="slds-p-top_x-small slds-p-bottom_xx-small">
+            <p class="slds-text-body_small color-gray">Created By</p>
+            <div class="flex-between">
+              <p class="slds-p-top_xx-small">Andrew Flintoff</p>
+              <p class="slds-badge">Internal</p>
+            </div>
+          </div>
+        </div>
+        <div class="element slds-p-around_x-small">
+          <h2 class="slds-page-header__title slds-border_bottom slds-p-top_x-small slds-p-bottom_x-small">Scenario 3</h2>
+          <div class="slds-p-top_x-small slds-p-bottom_xx-small">
+            <p class="slds-text-body_small color-gray">Created By</p>
+            <div class="flex-between">
+              <p class="slds-p-top_xx-small">Andrew Flintoff</p>
+              <p class="slds-badge">Internal</p>
+            </div>
+          </div>
+        </div>
+        <div class="element slds-p-around_x-small">
+          <h2 class="slds-page-header__title slds-border_bottom slds-p-top_x-small slds-p-bottom_x-small">Scenario 4</h2>
+          <div class="slds-p-top_x-small slds-p-bottom_xx-small">
+            <p class="slds-text-body_small color-gray">Created By</p>
+            <div class="flex-between">
+              <p class="slds-p-top_xx-small">Andrew Flintoff</p>
+              <p class="slds-badge">Internal</p>
+            </div>
+          </div>
+        </div>
+        <div class="element slds-p-around_x-small">
+          <h2 class="slds-page-header__title slds-border_bottom slds-p-top_x-small slds-p-bottom_x-small">Scenario 5</h2>
+          <div class="slds-p-top_x-small slds-p-bottom_xx-small">
+            <p class="slds-text-body_small color-gray">Created By</p>
+            <div class="flex-between">
+              <p class="slds-p-top_xx-small">Andrew Flintoff</p>
+              <p class="slds-badge">Internal</p>
+            </div>
+          </div>
+        </div>
+        <div class="element slds-p-around_x-small">
+          <h2 class="slds-page-header__title slds-border_bottom slds-p-top_x-small slds-p-bottom_x-small">Scenario 6</h2>
+          <div class="slds-p-top_x-small slds-p-bottom_xx-small">
+            <p class="slds-text-body_small color-gray">Created By</p>
+            <div class="flex-between">
+              <p class="slds-p-top_xx-small">Andrew Flintoff</p>
+              <p class="slds-badge">Internal</p>
+            </div>
+          </div>
+        </div>
+        <div class="element slds-p-around_x-small">
+          <h2 class="slds-page-header__title slds-border_bottom slds-p-top_x-small slds-p-bottom_x-small">Scenario 7</h2>
+          <div class="slds-p-top_x-small slds-p-bottom_xx-small">
+            <p class="slds-text-body_small color-gray">Created By</p>
+            <div class="flex-between">
+              <p class="slds-p-top_xx-small">Andrew Flintoff</p>
+              <p class="slds-badge">Internal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row-flexible">
+        <div class="element slds-p-right_small slds-p-left_small">
+          <div class="slds-border_top slds-text-align_center slds-p-top_x-small slds-p-bottom_small">
+            <img src="assets/images/icons/dollar.svg" alt="svg icon" class="icon">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              $ 1,135,000
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              $ 1,135,000
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray border-warning">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              $ 1,135,000
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray border-danger">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              $ 1,135,000
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              $ 1,135,000
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray border-warning">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              $ 1,135,000
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray border-danger">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              $ 1,135,000
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row-flexible">
+        <div class="element slds-p-right_small slds-p-left_small">
+          <div class="slds-border_top slds-text-align_center slds-p-top_x-small slds-p-bottom_small">
+            <img src="assets/images/icons/time.svg" alt="svg icon" class="icon">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              36 Months
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              30 Months
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              26 Months
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              22 Months
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              30 Months
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              26 Months
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              22 Months
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row-flexible">
+        <div class="element slds-p-right_small slds-p-left_small">
+          <div class="slds-border_top slds-text-align_center slds-p-top_x-small slds-p-bottom_small">
+            <img src="assets/images/icons/persent-new.svg" alt="svg icon" class="icon persent">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              <span class="slds-border_right slds-p-right_small">26%</span>
+              <span class="slds-p-left_x-small">$40,000</span>
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              <span class="slds-border_right slds-p-right_small">28%</span>
+              <span class="slds-p-left_x-small">$44,000</span>
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              <span class="slds-border_right slds-p-right_small">30%</span>
+              <span class="slds-p-left_x-small">$48,000</span>
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              ---
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              <span class="slds-border_right slds-p-right_small">28%</span>
+              <span class="slds-p-left_x-small">$44,000</span>
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              <span class="slds-border_right slds-p-right_small">30%</span>
+              <span class="slds-p-left_x-small">$48,000</span>
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              ---
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row-flexible">
+        <div class="element slds-p-right_small slds-p-left_small">
+          <div class="slds-border_top slds-text-align_center slds-p-top_x-small slds-p-bottom_small">
+            <img src="assets/images/icons/up.svg" alt="svg icon" class="icon">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              ---
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              <span class="slds-border_right slds-p-right_small">14%</span>
+              <span class="slds-p-left_x-small">$22,000</span>
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              <span class="slds-border_right slds-p-right_small">18%</span>
+              <span class="slds-p-left_x-small">$28,000</span>
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              <span class="slds-border_right slds-p-right_small">22%</span>
+              <span class="slds-p-left_x-small">$36,000</span>
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              <span class="slds-border_right slds-p-right_small">14%</span>
+              <span class="slds-p-left_x-small">$22,000</span>
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              <span class="slds-border_right slds-p-right_small">18%</span>
+              <span class="slds-p-left_x-small">$28,000</span>
+            </p>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <p class="slds-text-align_center slds-text-heading_small font-bold">
+              <span class="slds-border_right slds-p-right_small">22%</span>
+              <span class="slds-p-left_x-small">$36,000</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row-flexible">
+        <div class="element slds-p-right_small slds-p-left_small">
+          <div class="slds-border_top slds-text-align_center slds-p-top_x-small slds-p-bottom_small">
+            <img src="assets/images/icons/dollar-with-hands.svg" alt="svg icon" class="icon">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <div class="flex-between">
+              <div class="slds-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78" aria-labelledby="progress-bar-label-id-5" aria-label="{{Placeholder for description of progress bar}}" role="progressbar">
+                <span class="slds-progress-bar__value" style="width:78%">
+                  <span class="slds-assistive-text">Progress: 78%</span>
+                </span>
+              </div>
+              <div class="slds-grid slds-grid_align-spread slds-p-left_x-small" id="progress-bar-label-id-5">
+                <span aria-hidden="true">
+                  <strong>78%</strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <div class="flex-between">
+              <div class="slds-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78" aria-labelledby="progress-bar-label-id-5" aria-label="{{Placeholder for description of progress bar}}" role="progressbar">
+                <span class="slds-progress-bar__value" style="width:78%">
+                  <span class="slds-assistive-text">Progress: 78%</span>
+                </span>
+              </div>
+              <div class="slds-grid slds-grid_align-spread slds-p-left_x-small" id="progress-bar-label-id-5">
+                <span aria-hidden="true">
+                  <strong>78%</strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <div class="flex-between">
+              <div class="slds-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78" aria-labelledby="progress-bar-label-id-5" aria-label="{{Placeholder for description of progress bar}}" role="progressbar">
+                <span class="slds-progress-bar__value" style="width:78%">
+                  <span class="slds-assistive-text">Progress: 78%</span>
+                </span>
+              </div>
+              <div class="slds-grid slds-grid_align-spread slds-p-left_x-small" id="progress-bar-label-id-5">
+                <span aria-hidden="true">
+                  <strong>78%</strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <div class="flex-between">
+              <div class="slds-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78" aria-labelledby="progress-bar-label-id-5" aria-label="{{Placeholder for description of progress bar}}" role="progressbar">
+                <span class="slds-progress-bar__value" style="width:78%">
+                  <span class="slds-assistive-text">Progress: 78%</span>
+                </span>
+              </div>
+              <div class="slds-grid slds-grid_align-spread slds-p-left_x-small" id="progress-bar-label-id-5">
+                <span aria-hidden="true">
+                  <strong>78%</strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <div class="flex-between">
+              <div class="slds-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78" aria-labelledby="progress-bar-label-id-5" aria-label="{{Placeholder for description of progress bar}}" role="progressbar">
+                <span class="slds-progress-bar__value" style="width:78%">
+                  <span class="slds-assistive-text">Progress: 78%</span>
+                </span>
+              </div>
+              <div class="slds-grid slds-grid_align-spread slds-p-left_x-small" id="progress-bar-label-id-5">
+                <span aria-hidden="true">
+                  <strong>78%</strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <div class="flex-between">
+              <div class="slds-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78" aria-labelledby="progress-bar-label-id-5" aria-label="{{Placeholder for description of progress bar}}" role="progressbar">
+                <span class="slds-progress-bar__value" style="width:78%">
+                  <span class="slds-assistive-text">Progress: 78%</span>
+                </span>
+              </div>
+              <div class="slds-grid slds-grid_align-spread slds-p-left_x-small" id="progress-bar-label-id-5">
+                <span aria-hidden="true">
+                  <strong>78%</strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <div class="flex-between">
+              <div class="slds-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78" aria-labelledby="progress-bar-label-id-5" aria-label="{{Placeholder for description of progress bar}}" role="progressbar">
+                <span class="slds-progress-bar__value" style="width:78%">
+                  <span class="slds-assistive-text">Progress: 78%</span>
+                </span>
+              </div>
+              <div class="slds-grid slds-grid_align-spread slds-p-left_x-small" id="progress-bar-label-id-5">
+                <span aria-hidden="true">
+                  <strong>78%</strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row-flexible">
+        <div class="element slds-p-right_small slds-p-left_small">
+          <div class="slds-border_top slds-text-align_center slds-p-top_x-small slds-p-bottom_small">
+            <img src="assets/images/icons/users.svg" alt="svg icon" class="icon">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart-1.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart-3.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart-1.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart-3.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-row-flexible">
+        <div class="element slds-p-right_small slds-p-left_small">
+          <div class="slds-border_top slds-text-align_center slds-p-top_x-small slds-p-bottom_small">
+            <img src="assets/images/icons/causion.svg" alt="svg icon" class="icon">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart-3.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart-4.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart-4.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart-4.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart-4.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+        <div class="element slds-p-right_x-small slds-p-left_x-small slds-p-bottom_x-small">
+          <div class="slds-card slds-p-around_x-small bg-gray border-gray">
+            <img src="assets/images/chart.png" alt="chart" class="chart-image">
+          </div>
+        </div>
+      </div>
+      <div class="flex-row-flexible slds-p-top_small">
+        <div class="column">
+          <p class="slds-p-right_x-small slds-text-align_center slds-border_right height-100" style="word-break: break-all;">Comments</p>
+        </div>
+        <div class="column">
+          <p class="slds-p-right_x-small slds-border_right">
+            This is simply dummy text of the printing and 
+            typesetting industry. Lorem Ipsum has been 
+            the industry's standard dummy text ever.
+          </p>
+        </div>
+        <div class="column">
+          <p class="slds-p-right_x-small slds-border_right">
+            This is simply dummy text of the printing and 
+            typesetting industry. Lorem Ipsum has been 
+            the industry's standard dummy text ever.
+          </p>
+        </div>
+        <div class="column">
+          <p class="slds-p-right_x-small slds-border_right">
+            This is simply dummy text of the printing and 
+            typesetting industry. Lorem Ipsum has been 
+            the industry's standard dummy text ever.
+          </p>
+        </div>
+        <div class="column">
+          <p class="slds-p-right_x-small">
+            This is simply dummy text of the printing and 
+            typesetting industry. Lorem Ipsum has been 
+            the industry's standard dummy text ever.
+          </p>
+        </div>
+        <div class="column">
+          <p class="slds-p-right_x-small slds-border_right">
+            This is simply dummy text of the printing and 
+            typesetting industry. Lorem Ipsum has been 
+            the industry's standard dummy text ever.
+          </p>
+        </div>
+        <div class="column">
+          <p class="slds-p-right_x-small slds-border_right">
+            This is simply dummy text of the printing and 
+            typesetting industry. Lorem Ipsum has been 
+            the industry's standard dummy text ever.
+          </p>
+        </div>
+        <div class="column">
+          <p class="slds-p-right_x-small">
+            This is simply dummy text of the printing and 
+            typesetting industry. Lorem Ipsum has been 
+            the industry's standard dummy text ever.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <button class="slds-button slds-button_brand slds-text-title_bold">Close</button>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+      $(document).ready(function () {
+          $('.slds-dropdown-trigger_click').click(function () {
+              $(this).toggleClass('slds-is-open');
+          });
+
+      });
+  </script>
+</body>
+</html>

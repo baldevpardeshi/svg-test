@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box; 
+  margin: 0;
+ }
+ body{
+   font-family: 'Nunito Sans', sans-serif;
+   padding-top:50px;
+ }
+.color-gray{
+  color: #666666;
+  }
+.flex-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.border-0{
+  border:0px;
+}
+.border-gray{
+  border:1px solid #b3b3b3 !important;
+}
+.bg-gray{
+  background: #F5F6F8;
+}
+.font-bold{
+  font-weight: 700;
+}
+.height-100{
+  height:100%;
+}
+.slds-progress-bar,
+.slds-progress-bar__value{
+  border-radius: 50px;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 0 auto;
+ }
+ .flex-container {
+   background-color: #F5F6F8;
+   padding: 20px 30px;
+   margin: 0 33px 24px 33px;
+ }
+ header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 24px 33px;
+ }
+ footer{
+  border-top: 1px solid #D8DDE4;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+ }
+ 
+ .flex-row-2{
+  display: grid;
+   grid-gap: 14px;
+   grid-template-columns: repeat(4, calc(10% - 14px) calc(45% - 14px) calc(45%));
+  }
+ .flex-row{
+  display: grid;
+   grid-gap: 14px;
+   grid-template-columns: repeat(4, calc(10% - 14px) calc(30% - 14px) calc(30% - 14px) calc(30%));
+ }
+ .flex-row-4{
+  display: grid;
+   grid-gap: 14px;
+   grid-template-columns: repeat(5, calc(8% - 14px) calc(23% - 14px) calc(23% - 14px) calc(23% - 14px) calc(23%));
+ }
+ .flex-row-flexible{
+  display: grid;
+   grid-gap: 14px;
+   grid-template-columns: repeat(5, calc(8% - 14px) calc(23% - 14px) calc(23% - 14px) calc(23% - 14px) calc(23%));
+ }
+ .flex-row-flexible .element:nth-last-child(1),
+ .flex-row-flexible .element:nth-last-child(2),
+ .flex-row-flexible .element:nth-last-child(3),
+ .flex-row-flexible .column:nth-last-child(1),
+ .flex-row-flexible .column:nth-last-child(2),
+ .flex-row-flexible .column:nth-last-child(3){
+    display: none;
+ } 
+ .element{
+   background-color: #fff;
+   box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 20%);
+ }
+.chart-image{
+  height:150px;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+}
+.flex-container .flex-row:first-child .element,
+.flex-container .flex-row-2:first-child .element,
+.flex-container .flex-row-4:first-child .element{
+  border-radius: 6px 6px 0 0;
+}
+.flex-container .flex-row:nth-last-child(2) .element,
+.flex-container .flex-row-2:nth-last-child(2) .element,
+.flex-container .flex-row-4:nth-last-child(2) .element{
+  border-radius: 0px 0px 6px 6px;
+}
+
+.slds-progress-bar__value{
+  background: #4ebc9b;
+}
+.border-danger{
+  border: 1px solid red !important;
+  border-left: 5px solid red !important;
+}
+.border-warning{
+  border: 1px solid orange !important;
+  border-left: 5px solid orange !important;
+}
+.slds-builder-toolbar__actions{
+  margin-left: 0;
+}
+.slds-builder-toolbar__item-group{
+  margin-left: auto;
+}
+.slds-icon-text-default {
+  fill: #747474;
+}
+.left-auto{
+  left: auto;
+}
+/* Steps css start here*/
+.step {
+  position: relative;
+  min-height: 1em;
+  color: gray;
+  cursor: pointer;
+}
+.step + .step {
+  margin-top: 1.5em
+}
+.step > div:first-child {
+  position: static;
+  height: 0;
+}
+.step > div:not(:first-child) {
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+.step-active {
+  color: #1B4E8B;
+}
+.step.step-active .circle {
+  background-color: #1B4E8B;
+}
+.step.step-complete .circle {
+  background-color: #56BFA8;
+}
+
+/* Circle */
+.circle {
+  background: gray;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+/* Vertical Line */
+.circle:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  top: -30px;
+  right: 50%;
+  bottom: 1px;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  transform: scale(1.5);
+  transform-origin: 50% -100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.step.step-complete .circle:after {
+  background-color: #56BFA8;
+}
+.step.step-active .circle:after{
+  background-color: #1B4E8B;
+}
+.step:first-child .circle:after {
+  display: none
+}
+
+/* Stepper Titles */
+.title {
+  line-height: 1.5em;
+  font-weight: bold;
+}
+.caption {
+  font-size: 0.8em;
+}
+
+
+/* media query start here */
+@media screen and (max-width: 1024px) {
+  .chart-image{
+    height:100px;
+  }
+}
+@media  screen and (min-width: 1466px){
+  .container{
+    max-width: 90vw;
+  }
+  .flex-row-flexible{
+   display: grid;
+    grid-gap: 14px;
+    grid-template-columns: repeat(6, calc(8% - 14px) calc(18.4% - 14px) calc(18.4% - 14px) calc(18.4% - 14px) calc(18.4% - 14px) calc(18.4%));
+  }
+  .flex-row-flexible .element:nth-last-child(1),
+  .flex-row-flexible .element:nth-last-child(2),
+  .flex-row-flexible .column:nth-last-child(1),
+  .flex-row-flexible .column:nth-last-child(2){
+     display: none;
+  } 
+  .flex-row-flexible .column:nth-last-child(3),
+  .flex-row-flexible .element:nth-last-child(3){
+    display: block;
+  }
+}
+@media  screen and (min-width: 1536px){
+  .flex-row-flexible{
+   display: grid;
+    grid-gap: 14px;
+    grid-template-columns: repeat(6, calc(7% - 14px) calc(15.5% - 14px) calc(15.5% - 14px) calc(15.5% - 14px) calc(15.5% - 14px) calc(15.5% - 14px) calc(15.5%));
+  }
+  .flex-row-flexible .element:nth-last-child(1),
+  .flex-row-flexible .column:nth-last-child(1){
+     display: none;
+  } 
+  .flex-row-flexible .column:nth-last-child(2),
+  .flex-row-flexible .element:nth-last-child(2){
+    display: block;
+  }
+}
+@media  screen and (min-width: 1920px){
+  .flex-row-flexible{
+   display: grid;
+    grid-gap: 14px;
+    grid-template-columns: repeat(6, calc(6% - 14px) calc(13.42% - 14px) calc(13.42% - 14px) calc(13.42% - 14px) calc(13.42% - 14px) calc(13.42% - 14px) calc(13.42% - 14px) calc(13.42%));
+  }
+  .flex-row-flexible .element:nth-last-child(1),
+  .flex-row-flexible .column:nth-last-child(1){
+     display: block;
+  } 
+}
+.icon{
+  fill: red;
+}
